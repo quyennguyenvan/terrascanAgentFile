@@ -1,0 +1,21 @@
+# terrascan configuration file
+
+# notifications configuration
+# [notifications]
+#   [notifications.webhook]
+#   type = "webhook"
+#   [notifications.webhook.config]
+#   url = "https://httpbin.org/post"
+
+# scan and skip rules configuration
+[rules]
+    # scan rules (list of rules to scan)
+    # adding rules here will override rules in the policy path
+    # # skip rules (list of rules to skip)
+    # skip-rules = [
+    #     "AC-AWS-NS-IN-M-1172",
+    #     "AWS.CloudTrail.Logging.Medium.008",
+    # ]
+
+[policy]
+    path = "policies"
